@@ -1,0 +1,30 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: "user_manage"
+  datasource:
+    url: jdbc:mysql://localhost:3306/usermanage
+    username: root
+    password: ${DEV_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: ${DEV_PASSWORD}
+# mybatis
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.li.pojo.entity
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # ??sql??
+    map-underscore-to-camel-case: true # ?????????????????
+li:
+  jwt:
+    admin-token-name: "adminToken"
+    admin-ttl: 8640000
+    user-token-name: "token"
+    user-ttl: 8640000
+    admin-secret-key: "admin"
+    user-secret-key: "user"
