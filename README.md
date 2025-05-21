@@ -1,1 +1,1 @@
-<div align="center"> [接口文档](https://apifox.com/apidoc/shared-c54a7b1b-e93a-4555-b5c9-df84f7757dee) </div>
+[接口文档](https://apifox.com/apidoc/shared-c54a7b1b-e93a-4555-b5c9-df84f7757dee)
